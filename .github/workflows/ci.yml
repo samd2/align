@@ -346,6 +346,7 @@ jobs:
           COMPILER: ${{ matrix.compiler }}
           STANDARD: ${{ matrix.standard }}
           TRAVIS_BRANCH: ${{ github.base_ref }}
+          TRAVIS_OS_NAME: "linux"
         run: |
           echo '==================================> SETUP'
           if [ -n "$GHA_CONTAINER" ]; then
@@ -486,6 +487,7 @@ jobs:
           COMPILER: ${{ matrix.compiler }}
           STANDARD: ${{ matrix.standard }}
           TRAVIS_BRANCH: ${{ github.base_ref }}
+          TRAVIS_OS_NAME: "osx"
         run: |
           echo '==================================> SETUP'
           set -ex
