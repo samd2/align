@@ -312,7 +312,7 @@ jobs:
             standard: "03,11,14,17,2a"
           - name: "TOOLSET=clang COMPILER=clang++-libc++ STANDAR Job 24"
             buildtype: "boost"
-            packages: "libc++-dev"
+            packages: "clang libc++-dev"
             packages_to_remove: ""
             os: "ubuntu-16.04"
             container: "ubuntu:14.04"
@@ -322,7 +322,7 @@ jobs:
             llvm_ver: ""
             toolset: "clang"
             compiler: "clang++-libc++"
-            standard: "03,11,14,1z"
+            standard: "03,11,14"
             cxxstd: "03,11"
 
     runs-on: ${{ matrix.os }}
